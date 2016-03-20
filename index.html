@@ -2,28 +2,535 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Computergraphics by jjcao</title>
+    <title>Computer Graphics (DLUT) by xindongzhang</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Computergraphics</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="https://github.com/jjcao/ComputerGraphics" class="btn">View on GitHub</a>
-      <a href="https://github.com/jjcao/ComputerGraphics/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/jjcao/ComputerGraphics/tarball/master" class="btn">Download .tar.gz</a>
+      <h1 class="project-name">Computer Graphics (DLUT)</h1>
+      <h2 class="project-tagline">School of Mathematical Science</h2>
+      <a href="https://github.com/xindongzhang/CG" class="btn">View on GitHub</a>
+      <a href="https://github.com/xindongzhang/CG/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/xindongzhang/CG/tarball/master" class="btn">Download .tar.gz</a>
     </section>
 
     <section class="main-content">
-      <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+      <h2>
+<a id="计算机图形学" class="anchor" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>计算机图形学</strong>
+</h2>
+
+<h3>
+<a id="简介" class="anchor" href="#%E7%AE%80%E4%BB%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>简介</strong>
+</h3>
+
+<p>该课程由大连理工大学数学科学学院计算数学系开设，任课教师为苏志勋教授(<a href="http://cggi.dlut.edu.cn/?page_id=221">个人主页</a>)，助教为张新栋(<a href="http://xindongzhang.github.io/about">联系我</a>)。该课程为64学时的课程（不包含上机实习时间），整个课程内容涵盖图象处理、计算机视觉、计算机图形学。应用为主,理论为辅，提倡大家多动手实验，积极解决实际问题。通过这门课程的学习，你将会学习到图像处理、计算机视觉、计算机图形学的基本知识，学习和掌握一定的编程技能。如想了解更多有关图形图像的信息，可以关注我们的<a href="http://cggi.dlut.edu.cn/">实验室网站</a>。</p>
+
+<hr>
+
+<h3>
+<a id="上课时间" class="anchor" href="#%E4%B8%8A%E8%AF%BE%E6%97%B6%E9%97%B4" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>上课时间</strong>
+</h3>
+
+<table>
+<thead>
+<tr>
+<th>上课时间</th>
+<th>上课地点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>周二 7-8节课  (9-16周)</td>
+<td>综合楼 1-110</td>
+</tr>
+<tr>
+<td>周五 3-4节课  (9-16周)</td>
+<td>综合楼 1-110</td>
+</tr>
+<tr>
+<td>上机(11-16周) 周一晚9-12节课</td>
+<td>C座   c-0119</td>
+</tr>
+</tbody>
+</table>
+
+<hr>
+
+<h2>
+<a id="课程要求" class="anchor" href="#%E8%AF%BE%E7%A8%8B%E8%A6%81%E6%B1%82" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>课程要求</strong>
+</h2>
+
+<p>要完成这门课程的学习，你可能需要掌握如下技能：</p>
+
+<blockquote>
+<pre><code>* 一定MatLab基础
+* 一定的C++/C基础
+* OpenCV and OpenGL
+* Python等脚本语言(非必须,但是推荐学习，对就业帮助很大，numpy+Opencv+PyOpenGL+PyCUDA+Pymatplotlib+django，可以wiki了解)
+</code></pre>
+</blockquote>
+
+<hr>
+
+<h2>
+<a id="推荐的书籍" class="anchor" href="#%E6%8E%A8%E8%8D%90%E7%9A%84%E4%B9%A6%E7%B1%8D" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>推荐的书籍</strong>
+</h2>
+
+<p>该课程没有统一推荐的书籍，主要以老师的上课课件为主，后续的材料我们会统一上传到课程的主页，还望大家能持续关注。关于图像处理、计算机视觉、计算几何的推荐材料，基本如下：</p>
+
+<blockquote>
+<ul>
+<li>数字图像处理（冈萨雷斯）</li>
+<li>Computer Vision Algorithm and Application: <a href="http://pan.baidu.com/s/14g0V0">Link</a>
+</li>
+<li>OpenGL 编程指南: <a href="http://pan.baidu.com/s/1gd4Cj0B">Link</a>
+</li>
+<li>MatLab学习资源: <a href="http://cn.mathworks.com/help/index.html">Link</a>
+</li>
+<li>C++/C: <a href="http://www.tutorialspoint.com/cplusplus/index.htm">Link</a>
+</li>
+<li>Python: <a href="http://www.w3cschool.cc/python/python-tutorial.html">Link</a>
+</li>
+</ul>
+</blockquote>
+
+<hr>
+
+<h2>
+<a id="课程ppt" class="anchor" href="#%E8%AF%BE%E7%A8%8Bppt" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>课程PPT</strong>
+</h2>
+
+<blockquote>
+<ul>
+<li><a href="https://github.com/xindongzhang/CG/blob/gh-pages/_powerpoints/lect1(Raster).ppt?raw=true">lect1-Raster</a></li>
+<li><a href="https://github.com/xindongzhang/CG/blob/gh-pages/_powerpoints/lect2(Dither&amp;Alias).ppt?raw=true">lect2-Dither</a></li>
+<li><a href="https://github.com/xindongzhang/CG/blob/gh-pages/_powerpoints/lect3(Line,%20Modelling,%20Structure).ppt?raw=true">lect3-Line</a></li>
+<li><a href="https://github.com/xindongzhang/CG/raw/gh-pages/_powerpoints/lect4(Transform).ppt">lect4-transform</a></li>
+<li><a href="https://github.com/xindongzhang/CG/raw/gh-pages/_powerpoints/lect5(Local%20Illumination).ppt">lect5-local-illumination</a></li>
+<li><a href="https://github.com/xindongzhang/CG/raw/gh-pages/_powerpoints/lect6(Global%20Illumination).ppt">lect6-global-illumination</a></li>
+<li><a href="https://github.com/xindongzhang/CG/raw/gh-pages/_powerpoints/lect7(graphics-animation-keyframe).ppt">lect7-graphics-animation</a></li>
+<li><a href="https://github.com/xindongzhang/CG/raw/gh-pages/_powerpoints/lect8(graphics-animation-IK).ppt">lect8-graphics-animation-IK</a></li>
+<li><a href="https://github.com/xindongzhang/CG/raw/gh-pages/_powerpoints/lect9(graphics-animation-deformation).ppt">lect9-deformation</a></li>
+<li><a href="https://github.com/xindongzhang/CG/raw/gh-pages/_powerpoints/lect10(graphics-animation-morphing).ppt">lect10-morphing</a></li>
+<li><a href="https://github.com/xindongzhang/CG/raw/gh-pages/_powerpoints/lect11(graphics-animation-ODE).ppt">lect11-animation-ODE</a></li>
+<li><a href="https://github.com/xindongzhang/CG/raw/gh-pages/_powerpoints/lect12(graphics-animation-particle).ppt">lect12-animation-particle</a></li>
+<li><a href="https://github.com/xindongzhang/CG/raw/gh-pages/_powerpoints/lect13(Image-filter).ppt">lect13-image-filter</a></li>
+<li><a href="https://github.com/xindongzhang/CG/raw/gh-pages/_powerpoints/lect14(Image-edge).ppt">lect14-image-edge</a></li>
+<li><a href="https://github.com/xindongzhang/CG/raw/gh-pages/_powerpoints/lect15(Image-Haar%20Transform).ppt">lect15-haar-transform</a></li>
+<li><a href="https://github.com/xindongzhang/CG/raw/gh-pages/_powerpoints/lect16(Image-Fourier%20Transform).ppt">lect16-fourier-transform</a></li>
+</ul>
+</blockquote>
+
+<hr>
+
+<h2>
+<a id="课程作业" class="anchor" href="#%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>课程作业</strong>
+</h2>
+
+<p>姓名+学号+第几次作业:张新栋21401030第一次，压缩并邮件到<a href="mailto:xindongzhang@outlook.com">xindongzhang@outlook.com</a></p>
+
+<blockquote>
+<ul>
+<li>
+<a href="https://github.com/xindongzhang/CG/blob/gh-pages/_homeworks/homework1.md">第一次上机作业</a>，<a href="https://github.com/xindongzhang/CG/raw/gh-pages/_homeworks/ImageLAB.zip">参考示例</a>
+</li>
+<li><a href="https://github.com/xindongzhang/CG/blob/gh-pages/_homeworks/homework2.md">第二次上机作业</a></li>
+<li><a href="https://github.com/xindongzhang/CG/blob/gh-pages/_homeworks/homework3.md">第三次上级作业</a></li>
+<li>...</li>
+</ul>
+</blockquote>
+
+<hr>
+
+<h2>
+<a id="其他资源" class="anchor" href="#%E5%85%B6%E4%BB%96%E8%B5%84%E6%BA%90" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>其他资源</strong>
+</h2>
+
+<blockquote>
+<ul>
+<li>MatLab图像处理工具箱文档: <a href="http://cn.mathworks.com/help/images/index.html">Link</a>
+</li>
+<li>OpenCV下载地址: <a href="http://opencv.org/">Link</a>
+</li>
+<li>OpenGL下载地址: <a href="http://www.opengl.org/">Link</a>
+</li>
+<li>Python资源下载: <a href="https://pypi.python.org/pypi">Link</a>
+</li>
+<li>vs2010下载地址: <a href="http://pan.baidu.com/s/1bnhhigv">Link</a>
+</li>
+<li>预编译glut-3.7.0: <a href="http://pan.baidu.com/s/1gdJ8Xtp">link</a>
+</li>
+</ul>
+</blockquote>
+
+<hr>
+
+<h2>
+<a id="作业上交情况" class="anchor" href="#%E4%BD%9C%E4%B8%9A%E4%B8%8A%E4%BA%A4%E6%83%85%E5%86%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>作业上交情况</h2>
+
+<table>
+<thead>
+<tr>
+<th>姓名(学号)</th>
+<th>第一次</th>
+<th>第二次</th>
+<th>第三次</th>
+<th>第四次</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>刘阳-201212012</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+</tr>
+<tr>
+<td>刘新钰-201298702</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+</tr>
+<tr>
+<td>林佳莹-201211012</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+</tr>
+<tr>
+<td>夏玉-201211050</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+</tr>
+<tr>
+<td>崔丁仁-201212021</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+</tr>
+<tr>
+<td>吴晓君-201298703</td>
+<td>已交</td>
+<td>已交</td>
+<td><strong>未交</strong></td>
+<td><strong>未交</strong></td>
+</tr>
+<tr>
+<td>林静颐-201298701</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+</tr>
+<tr>
+<td>刘泽旭-201211080</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+</tr>
+<tr>
+<td>汪恺-201211001</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+</tr>
+<tr>
+<td>杜炜伟-201211119</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+</tr>
+<tr>
+<td>黄一珉-201211003</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+</tr>
+<tr>
+<td>刘万正-201211079</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+</tr>
+<tr>
+<td>迟哲爽-201211039‏</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+</tr>
+<tr>
+<td>王仁振-201211014</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+</tr>
+<tr>
+<td>项敏-201211136</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+</tr>
+<tr>
+<td>李树阳-201211045</td>
+<td>已交</td>
+<td>已交</td>
+<td><strong>未交</strong></td>
+<td><strong>未交</strong></td>
+</tr>
+<tr>
+<td>王子初-201211130</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+</tr>
+<tr>
+<td>刘泽旭-201211080</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+</tr>
+<tr>
+<td>刘旸-201211006</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+<td>已交</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="上机课考勤情况" class="anchor" href="#%E4%B8%8A%E6%9C%BA%E8%AF%BE%E8%80%83%E5%8B%A4%E6%83%85%E5%86%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>上机课考勤情况</h2>
+
+<table>
+<thead>
+<tr>
+<th>姓名(学号)</th>
+<th>第一次</th>
+<th>第二次</th>
+<th>第三次</th>
+<th>第四次</th>
+<th>第五次</th>
+<th>第六次</th>
+<th>答辩</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>刘阳-201212012</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td><strong>缺勤</strong></td>
+<td><strong>缺勤</strong></td>
+<td>未缺</td>
+</tr>
+<tr>
+<td>刘新钰-201298702</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+</tr>
+<tr>
+<td>林佳莹-201211012</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+</tr>
+<tr>
+<td>夏玉-201211050</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+</tr>
+<tr>
+<td>崔丁仁-201212021</td>
+<td>未缺</td>
+<td>未缺</td>
+<td><strong>请假</strong></td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+</tr>
+<tr>
+<td>吴晓君-201298703</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td><strong>缺勤</strong></td>
+</tr>
+<tr>
+<td>林静颐-201298701</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td><strong>缺勤</strong></td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+</tr>
+<tr>
+<td>刘泽旭-201211080</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td><strong>缺勤</strong></td>
+<td>未缺</td>
+</tr>
+<tr>
+<td>汪恺-201211001</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td><strong>缺勤</strong></td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+</tr>
+<tr>
+<td>杜炜伟-201211119</td>
+<td><strong>请假</strong></td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+</tr>
+<tr>
+<td>黄一珉-201211003</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+</tr>
+<tr>
+<td>刘万正-201211079</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+</tr>
+<tr>
+<td>迟哲爽-201211039‏</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+</tr>
+<tr>
+<td>王仁振-201211014</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+</tr>
+<tr>
+<td>项敏-201211136</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+</tr>
+<tr>
+<td>刘旸-201211006</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+</tr>
+<tr>
+<td>李树阳-201211045</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td><strong>缺勤</strong></td>
+<td>未缺</td>
+</tr>
+<tr>
+<td>王子初-201211130</td>
+<td><strong>缺勤</strong></td>
+<td>未缺</td>
+<td><strong>缺勤</strong></td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+<td>未缺</td>
+</tr>
+<tr>
+<td>刘世伟-201212036</td>
+<td><strong>缺勤</strong></td>
+<td><strong>缺勤</strong></td>
+<td><strong>缺勤</strong></td>
+<td><strong>缺勤</strong></td>
+<td>未缺</td>
+<td><strong>缺勤</strong></td>
+<td><strong>缺勤</strong></td>
+</tr>
+</tbody>
+</table>
 
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/jjcao/ComputerGraphics">Computergraphics</a> is maintained by <a href="https://github.com/jjcao">jjcao</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/xindongzhang/CG">Computer Graphics (DLUT)</a> is maintained by <a href="https://github.com/xindongzhang">xindongzhang</a>.</span>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
@@ -33,3 +540,4 @@
   
   </body>
 </html>
+
