@@ -9,7 +9,7 @@ todo
 ### Requirement
 ```
 1. C++ or matlab
-2. 
+2. Using other better wavelet transformation [Advance]
 ```
 ### References
 ```
