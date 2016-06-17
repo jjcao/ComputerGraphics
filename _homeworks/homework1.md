@@ -54,4 +54,4 @@ RGB转灰度图: rgb2gray
 [谷哥](http://www.google.com)
 ```
 
-* 打包压缩并邮件到xindongzhang@outlook.com，格式参考课程主页。
+* 打包压缩并邮件到ywdut@outlook.com，格式参考课程主页。

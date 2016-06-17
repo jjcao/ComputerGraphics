@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Computer Graphics (DLUT) by jjcao</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
@@ -27,9 +28,12 @@
 <a id="简介" class="anchor" href="#%E7%AE%80%E4%BB%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>简介</strong>
 </h3>
 
-<p>该课程由大连理工大学数学科学学院计算数学系开设，任课教师为苏志勋教授(<a href="http://cggi.dlut.edu.cn/?page_id=221">个人主页</a>)和曹俊杰讲师(<a href="http://jjcao.github.io/">个人主页</a>)，助教为王岩。
-    该课程为64学时的课程（不包含上机实习时间），整个课程内容涵盖图象处理、计算机视觉、计算机图形学。应用为主,理论为辅，提倡大家多动手实验，积极解决实际问题。通过这门课程的学习，你将会学习到图像处理、计算机视觉、计算机图形学的基本知识，学习和掌握一定的编程技能。
+<p>该课程由大连理工大学数学科学学院计算数学系开设，任课教师为苏志勋教授(<b><a href="http://cggi.dlut.edu.cn/?page_id=221">个人主页</a></b>)和曹俊杰讲师(<b><a href="http://jjcao.github.io/">个人主页</a></b>)，助教为王岩。
+    该课程为32学时（+24学时上机实习）的课程，整个课程内容涵盖图象处理、计算机视觉、计算机图形学。应用为主，理论为辅，提倡大家多动手实验，积极解决实际问题。通过这门课程的学习，你将会学习到图像处理、计算机视觉、计算机图形学的基本知识，学习和掌握一定的编程技能。
     如想了解更多有关图形图像的信息，可以关注我们的<a href="http://cggi.dlut.edu.cn/">实验室网站</a>。</p>
+<p><a href="https://piazza.com/class/inlcraj4ynw4qd">答疑和提交作业的网站</a></p>
+<p><b><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_homeworks/teamAssignments.docx?raw=true">大作业（根据指定内容，编写程序，运行程序。直接从网络或者他人处拷贝的0分！）</a></b>, 2人1组，
+    6.15大作业报告（每组10分钟,用PPT，可上台展示动画、介绍论文、专题等, …），6.17上课时候交大作业打印版（源程序，程序说明，作业介绍和展示）。</p>
 <hr>
 
 <h3>
@@ -45,7 +49,7 @@
 </thead>
 <tbody>
 <tr>
-<td>周二 7-8节课  (9-16周)</td>
+<td>周三 7-8节课  (9-16周)</td>
 <td>综合楼 1-110</td>
 </tr>
 <tr>
@@ -53,7 +57,14 @@
 <td>综合楼 1-110</td>
 </tr>
 <tr>
-<td>上机(11-16周) 周一晚9-12节课</td>
+<td>上机时间
+</br>11周 周四晚 (5.12)
+</br>12周 周四晚 (5.19)
+</br>13周 周四晚 (5.26)
+</br>14周 周四晚 (6.02)
+</br>14周 周五晚 (6.03)
+</br>15周 周一晚 (6.06)
+</td>
 <td>C座   c-0119</td>
 </tr>
 </tbody>
@@ -78,51 +89,69 @@
 <hr>
 
 <h2>
-<a id="推荐的书籍" class="anchor" href="#%E6%8E%A8%E8%8D%90%E7%9A%84%E4%B9%A6%E7%B1%8D" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>推荐的书籍</strong>
-</h2>
-
-<p>该课程没有统一推荐的书籍，主要以老师的上课课件为主，后续的材料我们会统一上传到课程的主页，还望大家能持续关注。关于图像处理、计算机视觉、计算几何的推荐材料，基本如下：</p>
-
-<blockquote>
-<ul>
-<li>数字图像处理（冈萨雷斯）</li>
-<li>Computer Vision Algorithm and Application: <a href="http://pan.baidu.com/s/14g0V0">Link</a>
-</li>
-<li>OpenGL 编程指南: <a href="http://pan.baidu.com/s/1gd4Cj0B">Link</a>
-</li>
-<li>MatLab学习资源: <a href="http://cn.mathworks.com/help/index.html">Link</a>
-</li>
-<li>C++/C: <a href="http://www.tutorialspoint.com/cplusplus/index.htm">Link</a>
-</li>
-<li>Python: <a href="http://www.w3cschool.cc/python/python-tutorial.html">Link</a>
-</li>
-</ul>
-</blockquote>
-
-<hr>
-
-<h2>
 <a id="课程ppt" class="anchor" href="#%E8%AF%BE%E7%A8%8Bppt" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>课程PPT</strong>
 </h2>
 
 <blockquote>
 <ul>
-<li><a href="https://github.com/jjcao/CG/blob/gh-pages/_powerpoints/lect1(Raster).ppt?raw=true">lect1-Raster</a></li>
-<li><a href="https://github.com/jjcao/CG/blob/gh-pages/_powerpoints/lect2(Dither&amp;Alias).ppt?raw=true">lect2-Dither</a></li>
-<li><a href="https://github.com/jjcao/CG/blob/gh-pages/_powerpoints/lect3(Line,%20Modelling,%20Structure).ppt?raw=true">lect3-Line</a></li>
-<li><a href="https://github.com/jjcao/CG/raw/gh-pages/_powerpoints/lect4(Transform).ppt">lect4-transform</a></li>
-<li><a href="https://github.com/jjcao/CG/raw/gh-pages/_powerpoints/lect5(Local%20Illumination).ppt">lect5-local-illumination</a></li>
-<li><a href="https://github.com/jjcao/CG/raw/gh-pages/_powerpoints/lect6(Global%20Illumination).ppt">lect6-global-illumination</a></li>
-<li><a href="https://github.com/jjcao/CG/raw/gh-pages/_powerpoints/lect7(graphics-animation-keyframe).ppt">lect7-graphics-animation</a></li>
-<li><a href="https://github.com/jjcao/CG/raw/gh-pages/_powerpoints/lect8(graphics-animation-IK).ppt">lect8-graphics-animation-IK</a></li>
-<li><a href="https://github.com/jjcao/CG/raw/gh-pages/_powerpoints/lect9(graphics-animation-deformation).ppt">lect9-deformation</a></li>
-<li><a href="https://github.com/jjcao/CG/raw/gh-pages/_powerpoints/lect10(graphics-animation-morphing).ppt">lect10-morphing</a></li>
-<li><a href="https://github.com/jjcao/CG/raw/gh-pages/_powerpoints/lect11(graphics-animation-ODE).ppt">lect11-animation-ODE</a></li>
-<li><a href="https://github.com/jjcao/CG/raw/gh-pages/_powerpoints/lect12(graphics-animation-particle).ppt">lect12-animation-particle</a></li>
-<li><a href="https://github.com/jjcao/CG/raw/gh-pages/_powerpoints/lect13(Image-filter).ppt">lect13-image-filter</a></li>
-<li><a href="https://github.com/jjcao/CG/raw/gh-pages/_powerpoints/lect14(Image-edge).ppt">lect14-image-edge</a></li>
-<li><a href="https://github.com/jjcao/CG/raw/gh-pages/_powerpoints/lect15(Image-Haar%20Transform).ppt">lect15-haar-transform</a></li>
-<li><a href="https://github.com/jjcao/CG/raw/gh-pages/_powerpoints/lect16(Image-Fourier%20Transform).ppt">lect16-fourier-transform</a></li>
+<li>00 Introduction</li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/00-introduction.pdf?raw=true">00_Introduction</a></li> 
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/001-history.pdf?raw=true">001-history</a></li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/001-application.pdf?raw=true">001-application</a></li>
+<li></li>
+        
+<li>02 Transformation</li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/lect4(Transform).ppt?raw=true">lect4-transform</a>, 
+    further reference: from Transformation I to Camera II of CSE 5542: Real-Time Rendering, there also is code for solar system (hierarchical transformation)</li>
+<li></li>
+    
+<li>03_Rasterization</li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/lect1(Raster).ppt?raw=true">lect1-Raster</a></li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/lect2(Dither%26Alias).ppt?raw=true">lect2-Dither</a></li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/lect3(Line%2C%20Modelling%2C%20Structure).ppt?raw=true">lect3-Line</a></li>
+<li></li>
+            
+<li>04 Representation</li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/04_geometryAndItsRepresentations.pdf?raw=true">04_geometry & its representations</a></li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/04-1_triangularMeshes.pdf?raw=true">04-1_triangular meshess</a></li>
+<li></li>
+
+<li>06 Lighting</li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/lect5(Local%20Illumination).ppt?raw=true">1. lect5-local-illumination</a></li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/lect6(Global%20Illumination).ppt?raw=true">2. lect6-global-illumination</a></li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/06_03_rayTracing.pdf?raw=true">3. Ray Tracing</a>, <a href="http://inst.eecs.berkeley.edu/~cs184/fa09/resources/raytracing.htm">Hints on Raytracer Design and Classes</a>, 
+    and <a href="http://inst.eecs.berkeley.edu/~cs184/fa09/raytrace_journal.php">Raytracing Implementation Journal</a>
+</li>
+<li></li>
+    
+<li>01 OpenGL</li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/01_introduction_gl.pdf?raw=true">01_Introduction of OpenGL</a></li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/01_1-basics_gl.pdf?raw=true">01-1_Basics of OpenGL</a></li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/01_2-transformations_coordinates_gl.pdf?raw=true">01-2_Transformations and Coordinates in OpenGL</a></li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/01_3-drawPrimitives_gl.pdf?raw=true">01-3_Draw Primitives in OpenGL (VBO)</a></li>
+<li></li>
+
+<li>05 Digital Geometry Processing</li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/05-DGP.pdf?raw=true">05_Digital Geometry Processing</a> </li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/05-1_sampling.pdf?raw=true">05-1_Sampling</a> </li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/05-2_Queries.pdf?raw=true">05-2_Queries</a></li>
+<li></li>
+
+<li>07 Animation</li>    
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/07_introduction.pdf?raw=true">07_introduction</a></li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/07-01_particleSystems.pdf?raw=true">07-01_particleSystems</a></li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/07-02_springSystems-MIT6_837F12_Lec08.pdf?raw=true">07-02_springSystems</a></li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/07-03_Implicit Integration, Collision Detection-MIT6_837F12_Lec09.pdf?raw=true">07-03_Implicit Integration, Collision Detection</a></li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/07-04_Collision Detection and Response-MIT6_837F12_Lec10.pdf?raw=true">07-04_Collision Detection and Response</a></li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/07-06_IK.pdf?raw=true">07-06_IK</a></li>
+<li></li>
+
+<li>08 Image Processing</li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/08_imgProc-Introduction.pdf?raw=true">08_imgProc-Introduction</a></li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/08_03_imgProc-Filtering.pdf?raw=true">08_03_imgProc-Filtering</a></li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/08_04_ImgProc-Bilateral_NonlocalMean.pdf?raw=true">08_04_ImgProc-Bilateral_NonlocalMean</a></li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/08_05_imgProc-edgeDetection.pdf?raw=true">08_05_imgProc-edgeDetection</a></li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_powerpoints/08_07_imgProc-Haar_Compression.pdf?raw=true">08_07_imgProc-Haar_Compression</a></li>    
 </ul>
 </blockquote>
 
@@ -132,44 +161,84 @@
 <a id="课程作业" class="anchor" href="#%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>课程作业</strong>
 </h2>
 
-<p>姓名+学号+第几次作业:张新栋21401030第一次，压缩并邮件到<a href="mailto:jjcao@outlook.com">jjcao@outlook.com</a></p>
+<p>姓名+学号+第几次作业:王岩11501012第一次，压缩并邮件到<a href="mailto:ywdut@outlook.com">ywdut@outlook.com</a></p>
 
 <blockquote>
 <ul>
 <li>
-<a href="https://github.com/jjcao/CG/blob/gh-pages/_homeworks/homework1.md">第一次上机作业</a>，<a href="https://github.com/jjcao/CG/raw/gh-pages/_homeworks/ImageLAB.zip">参考示例</a>
+<a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_homeworks/homework1.md">image quantization</a>，<a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_homeworks/ImageLAB.zip">参考示例</a>
 </li>
-<li><a href="https://github.com/jjcao/CG/blob/gh-pages/_homeworks/homework2.md">第二次上机作业</a></li>
-<li><a href="https://github.com/jjcao/CG/blob/gh-pages/_homeworks/homework3.md">第三次上级作业</a></li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_homeworks/homework2.md">line drawing</a></li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_homeworks/homework3.md">Mesh IO & display using OpenGL</a></li>
+<li><a href="https://github.com/jjcao/ComputerGraphics/blob/gh-pages/_homeworks/hw-imCompressionHaar.md">Image compression via Haar Wavelet Transformation</a></li>
 <li>...</li>
 </ul>
 </blockquote>
 
 <hr>
 
+
 <h2>
-<a id="其他资源" class="anchor" href="#%E5%85%B6%E4%BB%96%E8%B5%84%E6%BA%90" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>其他资源</strong>
+<a id="References"></a><strong>References</strong>
 </h2>
+
+<p>该课程没有统一推荐的书籍，主要以老师的上课课件为主，后续的材料我们会统一上传到课程的主页，还望大家能持续关注。关于图像处理、计算机视觉、计算几何的推荐材料，基本如下：</p>
 
 <blockquote>
 <ul>
-<li>MatLab图像处理工具箱文档: <a href="http://cn.mathworks.com/help/images/index.html">Link</a>
+<li>[book, CG]: <a href="http://math.hws.edu/graphicsbook/">Introduction to Computer Graphics</a>, by David J. Eck, include live, interactive demos with webgl, 2016.</li>
+<li>[book]: <a href="https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SIXTH_EDITION/">Interactive Computer Graphics：A Top-Down Approach with Shader-Based OpenGL</a> (6th.2011), has ppt</li>
+<li>[book]: 数字图像处理（冈萨雷斯）</li>
+<li>[book]: <a href="http://pan.baidu.com/s/14g0V0">Computer Vision Algorithm and Application</a></li>
+<li>[book]: <a href="http://pan.baidu.com/s/1gd4Cj0B">OpenGL Programming Guide (red book)</a></li>
+<li>[course, CG]: <a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-837-computer-graphics-fall-2012/lecture-notes/">
+    6.837  Computer Graphics (fall 2011)</a> @ MIT, old but practical</li>
+<li>[course, CG]: <a href="http://www.hao-li.com/Hao_Li/Hao_Li_-_teaching_%5BCSCI_420__Computer_Graphics_FS_2015%5D.html">
+    CSCI 420: Computer Graphics FS 2015</a>, by Hao Li, execllent slides and assignments: image 2 height fields, Simulating a Roller Coaster, ray tracing</li>
+<li>[course, CG]: <a href="http://15462.courses.cs.cmu.edu/fall2015/">CMU 15-462/662 COMPUTER GRAPHICS (Fall 2015)</a> @ CMU by Kayvon Fatahalian & Keenan Crane</li>
+<li>[course, CG]: <a href="http://www.cs.cmu.edu/~15462/">CMU 15-462/662 COMPUTER GRAPHICS (Spring 2016)</a> @ CMU by Nancy Pollard</li>
+<li>[course, CG]: <a href="http://www.cs.jhu.edu/~misha/Fall15/">600.357/600.457 Computer Graphics</a> by Misha 2015</li>
+<li>[course, GL]: <a href="http://web.cse.ohio-state.edu/~whmin/courses/cse5542-2013-spring/main.html">CSE 5542: Real-Time Rendering</a></li>
+<li>[course, GL]: <a href="https://courses.edx.org/courses/course-v1:UCSDx+CSE167x+2T2016/courseware/Unit_0/L1/">CSE167x Computer Graphics by Ravi Ramamoorthi @ edX</a> from transformation to ray tracing. 
+    It has four simple homeowrk: from Compiling OpenGL Programs, transformation and building a complete scene viewer in OpenGL to Ray tracing.
 </li>
-<li>OpenCV下载地址: <a href="http://opencv.org/">Link</a>
-</li>
-<li>OpenGL下载地址: <a href="http://www.opengl.org/">Link</a>
-</li>
-<li>Python资源下载: <a href="https://pypi.python.org/pypi">Link</a>
-</li>
-<li>vs2010下载地址: <a href="http://pan.baidu.com/s/1bnhhigv">Link</a>
-</li>
-<li>预编译glut-3.7.0: <a href="http://pan.baidu.com/s/1gdJ8Xtp">link</a>
-</li>
+<li>[course, Animation]: <a href="http://www.cs.cmu.edu/~15464-s13/">15-464 / 15-664: Technical Animation (Spring 2013)</a> @ CMU, by Nacy Pollard</li>
+<li>[course, CG]: <a href="http://web.stanford.edu/class/cs148/lectures.html">CS 148 Introduction to Computer Graphics and Imaging (Fall 2015)</a> @ stanford</li>
+<li>[course, CG]: <a href="http://cs.brown.edu/courses/cs123/">CS123 INTRO TO COMPUTER GRAPHICS</a>, @ brown</li>
+<li>[course, CG]: <a href="http://www.tutorialspoint.com/computer_graphics">Online course</a></li> 
+<li>[course, CG]: <a href="https://www.coursera.org/learn/interactive-computer-graphics/">Interactive Computer Graphics, by Takeo Igarashi</a> @ coursera</li>
+<li>[tutorial]: <a href="http://cn.mathworks.com/help/index.html">MatLab</a></li>
+<li>[tutorial]: <a href="http://www.tutorialspoint.com/cplusplus/index.htm">C++/C</a></li>
+<li>[tutorial]: <a href="http://www.w3cschool.cc/python/python-tutorial.html">Python</a></li>
+<li>[tutorial, GL]: <a href="http://ogldev.atspace.co.uk/index.html">Modern OpenGL Tutorials</a>, good explanation and code</li>
+<li>[tutorial, GL]: <a href="http://learnopengl.com">Learn OpenGL</a></li>
+<li>[tutorial, GL]: <a href="http://learnopengl.com">fundamental OpenGL tutorials and notes</a>, practical techniques</li>
 </ul>
 </blockquote>
 
 <hr>
 
+
+
+<h2>
+<a id="Resources" class="anchor" href="#%E5%85%B6%E4%BB%96%E8%B5%84%E6%BA%90" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Resources</strong>
+</h2>
+
+<blockquote>
+<ul>
+<li>[IDE] vs2015: <a href="http://pan.baidu.com/s/1c2a4Dos">Part1</a>， <a href="http://pan.baidu.com/s/1kU7Qfvp">Part2</a></li>
+<li>[library, OpenGL] <a href="http://pan.baidu.com/s/1gdJ8Xtp">预编译glut-3.7.0</a></li>
+<li>[library, image] <a href="http://cimg.eu/">C++ Template Image Processing Toolkit</a></li>
+<li>[Coding on the web] Create 3D webpage content using <a href="https://processing.org/">Processing</a>, a popular visual programming language for web using OpenGL integration for accelerated 2D and 3D</li>
+<li>[Coding on the web] <a href="https://www.khanacademy.org/computing/computer-programming">KHAN ACADEMY</a>: Create  project using JavaScript & 
+    ProcessingJS (sister project of the above popular Processing visual programming language) library, Create Webpage, Create SQL script</li>
+<li>[code]: <a href="https://github.com/Microsoft/Mesh-processing-library">Modern C++11 library and programs by Hoppe that demonstrate mesh processing techniques in computer graphics published at ACM SIGGRAPH in 1992–1998</a></li>
+</ul>
+</blockquote>
+
+<hr>
+
+        
 <h2>
 <a id="作业上交情况" class="anchor" href="#%E4%BD%9C%E4%B8%9A%E4%B8%8A%E4%BA%A4%E6%83%85%E5%86%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>作业上交情况</h2>
 
@@ -199,123 +268,102 @@
 <td> </td>
 </tr>
 <tr>
-<td>林佳莹-201211012</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
+<td>陈绍博-201311045</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
-<td>夏玉-201211050</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
+<td>郑清允-201311072</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
-<td>崔丁仁-201212021</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
+<td>岳子渝-201311110</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
-<td>吴晓君-201298703</td>
-<td>已交</td>
-<td>已交</td>
-<td><strong>未交</strong></td>
-<td><strong>未交</strong></td>
+<td>王耀勇-201311145</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
-<td>林静颐-201298701</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
+<td>陈金京-201311178</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
-<td>刘泽旭-201211080</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
+<td>陈秋阳-201311006</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
-<td>汪恺-201211001</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
+<td>谢锦松-201311013</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
 </tr>
 <tr>
-<td>杜炜伟-201211119</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
+<td>方远-201311051</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
-<td>黄一珉-201211003</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
+<td>张英东-201311060</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
-<td>刘万正-201211079</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
+<td>胡宏建-201311069</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
-<td>迟哲爽-201211039‏</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
+<td>安韬-201311105‏</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
-<td>王仁振-201211014</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
+<td>勾皓亮-201311134</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
-<td>项敏-201211136</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
+<td>许原-201311135</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
-<td>李树阳-201211045</td>
-<td>已交</td>
-<td>已交</td>
-<td><strong>未交</strong></td>
-<td><strong>未交</strong></td>
-</tr>
-<tr>
-<td>王子初-201211130</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
-</tr>
-<tr>
-<td>刘泽旭-201211080</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
-</tr>
-<tr>
-<td>刘旸-201211006</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
-<td>已交</td>
+<td>卜文凤-201311171</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
 </tr>
 </tbody>
 </table>
@@ -338,194 +386,164 @@
 </thead>
 <tbody>
 <tr>
-<td>刘阳-201212012</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
+<td>郑健-201311003</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td> </td>
+</tr>
+<tr>
+<td>康有志-201311027</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td> </td>
+</tr>
+<tr>
+<td>陈绍博-201311045</td>
 <td><strong>缺勤</strong></td>
+<td>&radic;</td>
+<td>&radic;</td>
 <td><strong>缺勤</strong></td>
-<td>未缺</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td> </td>
 </tr>
 <tr>
-<td>刘新钰-201298702</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-</tr>
-<tr>
-<td>林佳莹-201211012</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-</tr>
-<tr>
-<td>夏玉-201211050</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-</tr>
-<tr>
-<td>崔丁仁-201212021</td>
-<td>未缺</td>
-<td>未缺</td>
+<td>郑清允-201311072</td>
 <td><strong>请假</strong></td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-</tr>
-<tr>
-<td>吴晓君-201298703</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
+<td>&radic;</td>
 <td><strong>缺勤</strong></td>
-</tr>
-<tr>
-<td>林静颐-201298701</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
 <td><strong>缺勤</strong></td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-</tr>
-<tr>
-<td>刘泽旭-201211080</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
 <td><strong>缺勤</strong></td>
-<td>未缺</td>
-</tr>
-<tr>
-<td>汪恺-201211001</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
 <td><strong>缺勤</strong></td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
+<td> </td>
 </tr>
 <tr>
-<td>杜炜伟-201211119</td>
+<td>岳子渝-201311110</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td> </td>
+</tr>
+<tr>
+<td>王耀勇-201311145</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
 <td><strong>请假</strong></td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
+<td> </td>
 </tr>
 <tr>
-<td>黄一珉-201211003</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-</tr>
-<tr>
-<td>刘万正-201211079</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-</tr>
-<tr>
-<td>迟哲爽-201211039‏</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-</tr>
-<tr>
-<td>王仁振-201211014</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-</tr>
-<tr>
-<td>项敏-201211136</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-</tr>
-<tr>
-<td>刘旸-201211006</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-</tr>
-<tr>
-<td>李树阳-201211045</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
+<td>陈金京-201311178</td>
+<td>&radic;</td>
+<td>&radic;</td>
 <td><strong>缺勤</strong></td>
-<td>未缺</td>
+<td>&radic;</td>
+<td><strong>缺勤</strong></td>
+<td><strong>缺勤</strong></td>
+<td> </td>
 </tr>
 <tr>
-<td>王子初-201211130</td>
-<td><strong>缺勤</strong></td>
-<td>未缺</td>
-<td><strong>缺勤</strong></td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
-<td>未缺</td>
+<td>陈秋阳-201311006</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td> </td>
 </tr>
 <tr>
-<td>刘世伟-201212036</td>
+<td>谢锦松-201311013</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td><strong>缺勤</strong></td>
+<td> </td>
+</tr>
+<tr>
+<td>方远-201311051</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td> </td>
+</tr>
+<tr>
+<td>张英东-201311060</td>
 <td><strong>缺勤</strong></td>
 <td><strong>缺勤</strong></td>
 <td><strong>缺勤</strong></td>
 <td><strong>缺勤</strong></td>
-<td>未缺</td>
 <td><strong>缺勤</strong></td>
+<td>&radic;</td>
+<td> </td>
+</tr>
+<tr>
+<td>胡宏建-201311069</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td> </td>
+</tr>
+<tr>
+<td>安韬-201311105‏</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td> </td>
+</tr>
+<tr>
+<td>勾皓亮-201311134</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td><strong>请假</strong></td>
+<td> </td>
+</tr>
+<tr>
+<td>许原-201311135</td>
+<td>&radic;</td>
 <td><strong>缺勤</strong></td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td> </td>
+</tr>
+<tr>
+<td>卜文凤-201311171</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td>&radic;</td>
+<td> </td>
 </tr>
 </tbody>
 </table>
